@@ -5,6 +5,7 @@ import { WhyItMattersSection } from "@/components/why-it-matters-section"
 import { DifferentiatorsSection } from "@/components/differentiators-section"
 import { OutcomesSection } from "@/components/outcomes-section"
 import { TractionSection } from "@/components/traction-section"
+import { AboutSection } from "@/components/about-section"
 import { PilotSection } from "@/components/pilot-section"
 import { FinalCtaSection } from "@/components/final-cta-section"
 import { Footer } from "@/components/footer"
@@ -19,6 +20,7 @@ export default function Page() {
       <DifferentiatorsSection />
       <OutcomesSection />
       <TractionSection />
+      <AboutSection />
       <PilotSection />
       <FinalCtaSection />
       <Footer />
