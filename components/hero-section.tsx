@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Star } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 
 export function HeroSection() {
   return (
@@ -8,25 +8,23 @@ export function HeroSection() {
         {/* Left Panel - Dark */}
         <div className="bg-primary text-primary-foreground flex flex-col justify-center px-6 py-16 lg:px-16 lg:py-24">
           <div className="max-w-2xl">
-            {/* Trust Badge */}
-            <div className="inline-flex items-center gap-2 bg-primary-foreground/10 px-4 py-2 rounded-full mb-8">
-              <Star className="w-4 h-4 fill-accent text-accent" />
-              <span className="text-sm font-medium">Trusted by 50+ Aged Care Providers</span>
-            </div>
-
             {/* Headline */}
             <h1 className="text-5xl lg:text-6xl font-bold leading-tight mb-6 text-balance">
               Lift Leadership & Workforce Performance. Every Week.
             </h1>
 
             {/* Subheadline */}
-            <p className="text-lg lg:text-xl text-primary-foreground/90 mb-8 leading-relaxed">
-              The behaviour change engine that transforms aged care teams through weekly micro-actions. Better leaders →
-              better teams → better care.
+            <p className="text-lg lg:text-xl text-primary-foreground/90 mb-4 leading-relaxed">
+              Culture Crunch is the <strong>Behaviour Change Engine</strong> that improves leadership, lifts engagement, and reduces turnover — without workshops, consultants, or new headcount.
+            </p>
+
+            {/* Tagline */}
+            <p className="text-lg lg:text-xl font-semibold text-accent mb-8">
+              The fastest way to build stronger aged care teams and better care outcomes.
             </p>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4 mb-12">
+            <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-base font-semibold">
                 Book a 20-Minute Demo
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -40,21 +38,10 @@ export function HeroSection() {
               </Button>
             </div>
 
-            {/* Statistics */}
-            <div className="grid grid-cols-3 gap-8 pt-8 border-t border-primary-foreground/20">
-              <div>
-                <div className="text-3xl lg:text-4xl font-bold mb-1">90%+</div>
-                <div className="text-sm text-primary-foreground/70">Leader Adoption</div>
-              </div>
-              <div>
-                <div className="text-3xl lg:text-4xl font-bold mb-1">30sec</div>
-                <div className="text-sm text-primary-foreground/70">Weekly Commitment</div>
-              </div>
-              <div>
-                <div className="text-3xl lg:text-4xl font-bold mb-1">30d</div>
-                <div className="text-sm text-primary-foreground/70">To See Results</div>
-              </div>
-            </div>
+            {/* Trust Line */}
+            <p className="text-sm text-primary-foreground/70 italic">
+              Trusted by aged care providers navigating Australia's most severe workforce challenges.
+            </p>
           </div>
         </div>
 

@@ -3,13 +3,13 @@ import { Check, ArrowRight } from "lucide-react"
 
 export function PilotSection() {
   const included = [
-    "30-day pilot in one home or site",
-    "Weekly behaviour change questions for all leaders",
-    "Real-time dashboards for HR and site managers",
-    "Dedicated onboarding and support",
-    "Measurable outcomes within 30 days",
-    "No lock-in contracts or long-term commitments",
-    "Full access to platform features",
+    "One aged care home or service",
+    "Weekly behaviour engine for every leader",
+    "ChrisAI leadership coaching",
+    "Team pulse + leader pulse",
+    "Baseline + end-of-month insights",
+    "Executive-level behavioural report",
+    "Support from our behavioural specialists",
   ]
 
   return (
@@ -17,21 +17,18 @@ export function PilotSection() {
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            Try Culture Crunch in One Home — See Improvements in 30 Days
+            Try Culture Crunch in one home — see improvements in 30 days.
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Start small, prove value fast, scale when ready
-          </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Left: What's Included */}
           <div>
-            <h3 className="text-2xl font-bold mb-8 text-foreground">What's Included</h3>
+            <h3 className="text-2xl font-bold mb-8 text-foreground">Your 30-Day Pilot Includes:</h3>
             <ul className="space-y-4">
               {included.map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
-                  <span className="flex-shrink-0 w-6 h-6 rounded-full bg-accent/20 text-accent-foreground flex items-center justify-center mt-0.5">
+                  <span className="shrink-0 w-6 h-6 rounded-full bg-accent/20 text-accent-foreground flex items-center justify-center mt-0.5">
                     <Check className="w-4 h-4" />
                   </span>
                   <span className="text-lg text-foreground/90">{item}</span>
@@ -43,14 +40,10 @@ export function PilotSection() {
           {/* Right: Pricing Card */}
           <div className="bg-card border-2 border-primary rounded-xl p-8 lg:p-10 sticky top-8">
             <div className="mb-8">
-              <div className="text-sm uppercase tracking-wider text-muted-foreground mb-2">30-Day Pilot Program</div>
+              <div className="text-sm uppercase tracking-wider text-muted-foreground mb-2">Pilot Cost</div>
               <div className="flex items-baseline gap-2 mb-4">
                 <span className="text-5xl font-bold text-card-foreground">$25,000</span>
-                <span className="text-muted-foreground">AUD</span>
               </div>
-              <p className="text-muted-foreground">
-                One site, 30 days, measurable results. Extend or scale after you see the impact.
-              </p>
             </div>
 
             <div className="space-y-3 mb-8">
@@ -64,10 +57,6 @@ export function PilotSection() {
               <Button size="lg" variant="outline" className="w-full text-base font-semibold bg-transparent">
                 Talk to a Founder
               </Button>
-            </div>
-
-            <div className="text-center text-sm text-muted-foreground">
-              No lock-in contracts • Cancel anytime • ROI guaranteed
             </div>
           </div>
         </div>

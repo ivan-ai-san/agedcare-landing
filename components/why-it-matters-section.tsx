@@ -1,31 +1,26 @@
-import { Target, Users, Heart, TrendingUp, Shield } from "lucide-react"
+import { Target, Users, Heart, Shield, Star } from "lucide-react"
 
 export function WhyItMattersSection() {
   const benefits = [
     {
       icon: Target,
-      title: "Clarity Reduces Mistakes",
-      description: "When leaders know what to do, teams execute better and residents receive consistent care.",
+      text: "Clearer leaders reduce mistakes.",
     },
     {
       icon: Users,
-      title: "Teamwork Reduces Stress",
-      description: "Better communication and collaboration means less burnout and better staff retention.",
+      text: "Better teamwork reduces stress.",
     },
     {
       icon: Heart,
-      title: "Connection Improves Wellbeing",
-      description: "Leaders who connect with their teams create environments where staff want to stay.",
-    },
-    {
-      icon: TrendingUp,
-      title: "Capability Drives Performance",
-      description: "Leaders who grow their skills week by week deliver measurable improvements.",
+      text: "Supported staff stay longer.",
     },
     {
       icon: Shield,
-      title: "Proactive Prevents Crisis",
-      description: "Catch and address issues before they become compliance failures or safety incidents.",
+      text: "Safer culture improves compliance.",
+    },
+    {
+      icon: Star,
+      text: "Stronger shifts lift resident experience.",
     },
   ]
 
@@ -33,26 +28,28 @@ export function WhyItMattersSection() {
     <section className="py-20 lg:py-32 bg-background">
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6">Better Leaders → Better Teams → Better Care</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            When leadership capability improves week by week, everything improves
-          </p>
+          <h2 className="text-4xl lg:text-5xl font-bold mb-6">Better Leaders → Better Teams → Better Care.</h2>
         </div>
 
-        {/* Benefits Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {benefits.map((benefit, index) => (
-            <div
-              key={index}
-              className="bg-card p-8 rounded-xl border border-border hover:border-primary transition-colors"
-            >
-              <div className="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
-                <benefit.icon className="w-7 h-7 text-primary" />
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-card-foreground">{benefit.title}</h3>
-              <p className="text-muted-foreground leading-relaxed">{benefit.description}</p>
-            </div>
-          ))}
+        {/* Benefits List */}
+        <div className="max-w-2xl mx-auto mb-12">
+          <ul className="space-y-4">
+            {benefits.map((benefit, index) => (
+              <li key={index} className="flex items-center gap-4 p-4 bg-card rounded-lg border border-border">
+                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                  <benefit.icon className="w-6 h-6 text-primary" />
+                </div>
+                <p className="text-lg font-medium text-card-foreground">{benefit.text}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Closing Statement */}
+        <div className="text-center mb-12">
+          <p className="text-xl text-muted-foreground">
+            Culture Crunch improves the <strong className="text-foreground">moments that matter</strong> in aged care.
+          </p>
         </div>
 
         {/* Image */}

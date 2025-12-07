@@ -6,15 +6,14 @@ export function FinalCtaSection() {
     <section className="py-20 lg:py-32 bg-primary text-primary-foreground">
       <div className="container mx-auto px-6 max-w-4xl text-center">
         <h2 className="text-4xl lg:text-5xl font-bold mb-8 text-balance leading-tight">
-          Aged Care Deserves Leaders and Teams Who Feel Supported, Capable, and Connected
+          Aged Care deserves leaders and teams who feel supported, capable, and connected.
         </h2>
-        <p className="text-xl lg:text-2xl text-primary-foreground/90 mb-8 leading-relaxed">
-          Culture Crunch helps you build that — one week at a time
+        <p className="text-xl lg:text-2xl text-primary-foreground/90 mb-12 leading-relaxed">
+          Culture Crunch helps you build that — one week at a time.
         </p>
 
         <div className="bg-primary-foreground/10 border border-primary-foreground/20 rounded-xl p-8 mb-12">
-          <p className="text-2xl lg:text-3xl font-bold mb-2">Lift leadership. Strengthen teams. Improve care.</p>
-          <p className="text-lg text-primary-foreground/80">All in 30 seconds per leader per week</p>
+          <p className="text-2xl lg:text-3xl font-bold">Lift leadership. Strengthen teams. Improve care.</p>
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -22,7 +21,7 @@ export function FinalCtaSection() {
             size="lg"
             className="bg-accent text-accent-foreground hover:bg-accent/90 text-base font-semibold px-8"
           >
-            Book a 20-Minute Demo
+            Book a Demo
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
           <Button
@@ -30,7 +29,7 @@ export function FinalCtaSection() {
             variant="outline"
             className="bg-transparent border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 text-base font-semibold px-8"
           >
-            Talk to a Founder
+            Request a Proposal
           </Button>
         </div>
       </div>

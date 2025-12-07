@@ -1,39 +1,41 @@
 export function OutcomesSection() {
   const audiences = [
     {
-      role: "CEOs",
+      role: "For CEOs",
       outcomes: [
-        "Lower staff turnover = immediate cost savings",
-        "Measurable culture improvement across sites",
-        "Reduced compliance risk and incident rates",
-        "Data-backed confidence in leadership capability",
+        "Stronger leadership across every home",
+        "Higher workforce performance",
+        "Reduced turnover and agency reliance",
+        "Better resident experience",
+        "Improved compliance and operational stability",
       ],
     },
     {
-      role: "CHROs",
+      role: "For CHROs",
       outcomes: [
-        "Real-time workforce sentiment and risk signals",
-        "Proactive interventions before crises develop",
-        "Clear ROI on leadership development investment",
-        "Reduced recruitment and onboarding costs",
+        "Scalable behaviour change",
+        "Meaningful engagement shifts within weeks",
+        "Development for every leader, every week",
+        "Fewer grievances and escalations",
+        "Clear reporting on behavioural improvement",
       ],
     },
     {
-      role: "Managers",
+      role: "For Managers & Team Leaders",
       outcomes: [
-        "Know exactly what to do each week to improve",
-        "Feel supported, not surveyed",
-        "Build capability without extra workload",
-        "See their impact on team performance",
+        "Simple, actionable guidance each week",
+        "Better communication and conflict handling",
+        "Calmer, more connected shifts",
+        "Higher confidence and capability",
       ],
     },
     {
-      role: "Frontline Staff",
+      role: "For Frontline Staff",
       outcomes: [
-        "Work in teams that communicate better",
-        "Experience less burnout and stress",
-        "Feel heard and valued by leadership",
-        "See real improvements week by week",
+        "More support",
+        "More clarity",
+        "More recognition",
+        "A culture worth staying in",
       ],
     },
   ]
@@ -43,9 +45,6 @@ export function OutcomesSection() {
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">What Aged Care Providers Achieve</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Different stakeholders, different outcomes — all measurable, all valuable
-          </p>
         </div>
 
         {/* Outcomes Grid */}
@@ -53,12 +52,12 @@ export function OutcomesSection() {
           {audiences.map((audience, index) => (
             <div key={index} className="bg-card p-8 rounded-xl border border-border">
               <div className="mb-6">
-                <h3 className="text-2xl font-bold text-card-foreground">{audience.role}</h3>
+                <h3 className="text-xl font-bold text-card-foreground">{audience.role}</h3>
               </div>
-              <ul className="space-y-4">
+              <ul className="space-y-3">
                 {audience.outcomes.map((outcome, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <span className="flex-shrink-0 w-5 h-5 rounded-full bg-accent/20 text-accent-foreground flex items-center justify-center text-xs font-bold mt-0.5">
+                    <span className="shrink-0 w-5 h-5 rounded-full bg-accent/20 text-accent-foreground flex items-center justify-center text-xs font-bold mt-0.5">
                       ✓
                     </span>
                     <span className="text-sm text-muted-foreground leading-relaxed">{outcome}</span>

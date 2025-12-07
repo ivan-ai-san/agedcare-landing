@@ -1,8 +1,10 @@
 export function TractionSection() {
-  const metrics = [
-    { value: "90%+", label: "Leader adoption across pilot sites" },
-    { value: "4 weeks", label: "To see measurable team improvements" },
-    { value: "30 days", label: "To observe uplift in first month metrics" },
+  const results = [
+    "90%+ leader adoption",
+    "Improved morale within weeks",
+    "Teams reporting \"small changes making a big difference\"",
+    "Leaders reporting lower stress and more confidence",
+    "Measurable behavioural uplift in the first month",
   ]
 
   return (
@@ -10,35 +12,35 @@ export function TractionSection() {
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="text-center mb-12">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">Early Aged Care Partners</h2>
-          <p className="text-xl text-primary-foreground/90 max-w-3xl mx-auto">
-            We're working with forward-thinking providers who refuse to accept the status quo
-          </p>
         </div>
 
         {/* Partner Logos Placeholder */}
-        <div className="flex flex-wrap justify-center items-center gap-12 mb-16 opacity-80">
-          <div className="text-xl font-semibold">Pilot Partner 1</div>
-          <div className="text-xl font-semibold">Pilot Partner 2</div>
-          <div className="text-xl font-semibold">Pilot Partner 3</div>
+        <div className="flex flex-wrap justify-center items-center gap-12 mb-16 opacity-60">
+          <div className="text-lg font-medium bg-primary-foreground/10 px-6 py-3 rounded-lg">Partner Logo</div>
+          <div className="text-lg font-medium bg-primary-foreground/10 px-6 py-3 rounded-lg">Partner Logo</div>
+          <div className="text-lg font-medium bg-primary-foreground/10 px-6 py-3 rounded-lg">Partner Logo</div>
         </div>
 
-        {/* Key Metrics */}
-        <div className="grid md:grid-cols-3 gap-8">
-          {metrics.map((metric, index) => (
-            <div key={index} className="text-center">
-              <div className="text-5xl lg:text-6xl font-bold mb-3 text-accent">{metric.value}</div>
-              <div className="text-lg text-primary-foreground/80">{metric.label}</div>
-            </div>
-          ))}
+        {/* What they're seeing */}
+        <div className="max-w-2xl mx-auto">
+          <h3 className="text-2xl font-bold mb-6 text-center">What they're seeing:</h3>
+          <ul className="space-y-4">
+            {results.map((result, index) => (
+              <li key={index} className="flex items-start gap-3">
+                <span className="shrink-0 w-6 h-6 rounded-full bg-accent text-accent-foreground flex items-center justify-center text-sm font-bold mt-0.5">
+                  ✓
+                </span>
+                <span className="text-lg text-primary-foreground/90">{result}</span>
+              </li>
+            ))}
+          </ul>
         </div>
 
-        {/* Optional Testimonial */}
-        <div className="mt-16 max-w-3xl mx-auto text-center">
-          <blockquote className="text-xl lg:text-2xl italic mb-4">
-            "In 30 days, we saw improvements in manager confidence and team communication. It's the first tool that
-            actually fits into our workflow instead of adding to it."
-          </blockquote>
-          <cite className="text-primary-foreground/70 not-italic">— CEO, Regional Aged Care Provider</cite>
+        {/* Tagline */}
+        <div className="mt-16 text-center">
+          <p className="text-2xl lg:text-3xl font-bold text-accent">
+            Better leaders → Better teams → Better care.
+          </p>
         </div>
       </div>
     </section>
