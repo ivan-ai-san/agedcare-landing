@@ -34,7 +34,7 @@ export function DifferentiatorsSection() {
       number: 5,
       icon: LineChart,
       title: "High-frequency insight",
-      description: "Catch risk early — burnout, conflict, disengagement, turnover signals.",
+      description: "Catch risk early - burnout, conflict, disengagement, turnover signals.",
     },
     {
       number: 6,

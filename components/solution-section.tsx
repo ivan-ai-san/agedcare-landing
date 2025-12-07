@@ -1,3 +1,5 @@
+"use client"
+
 import { Users, UserCheck, Brain, Target, BarChart3 } from "lucide-react"
 
 export function SolutionSection() {
@@ -6,7 +8,7 @@ export function SolutionSection() {
       number: 1,
       icon: Users,
       title: "Weekly Team Pulse",
-      description: "Staff answer 3–4 micro-questions about teamwork, safety, support, clarity, and morale.",
+      description: "Staff answer 3-4 micro-questions about teamwork, safety, support, clarity, and morale.",
       image: "/team_pulse.png",
     },
     {
@@ -27,25 +29,25 @@ export function SolutionSection() {
       number: 4,
       icon: Target,
       title: "Weekly Micro-Actions",
-      description: "Each leader receives 1–2 personalised actions they can use immediately.",
+      description: "Each leader receives 1-2 personalised actions they can use immediately.",
       image: "/micro_actions.png",
     },
     {
       number: 5,
       icon: BarChart3,
       title: "Tracking & Reporting",
-      description: "You see measurable behavioural improvements — week by week.",
+      description: "You see measurable behavioural improvements - week by week.",
       image: "/dashboard.png",
     },
   ]
 
   return (
-    <section className="py-20 lg:py-32 bg-primary text-primary-foreground">
+    <section id="how-it-works" className="py-20 lg:py-32 bg-primary text-primary-foreground">
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">The Behaviour Change Engine for Aged Care</h2>
           <p className="text-xl text-primary-foreground/90 max-w-3xl mx-auto leading-relaxed">
-            Culture Crunch gives every leader and team personalised, science-backed micro-actions every week — based on real workforce data — to improve engagement, teamwork and performance.
+            Culture Crunch gives every leader and team personalised, science-backed micro-actions every week - based on real workforce data - to improve engagement, teamwork and performance.
           </p>
         </div>
 

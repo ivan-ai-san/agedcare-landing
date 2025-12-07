@@ -43,7 +43,7 @@ export function ProblemSection() {
         {/* Insight */}
         <div className="text-center mb-16">
           <p className="text-xl text-muted-foreground">
-            Most organisations know <em>why</em> performance is slipping — <br />
+            Most organisations know <em>why</em> performance is slipping - <br />
             <strong className="text-foreground">but they can't turn insight into behaviour change.</strong>
           </p>
         </div>

@@ -1,7 +1,12 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
+import { useContactForm } from "@/components/contact-form-modal"
 
 export function HeroSection() {
+  const { openForm } = useContactForm()
+
   return (
     <section className="relative overflow-hidden">
       <div className="grid lg:grid-cols-2 min-h-[90vh]">
@@ -15,7 +20,7 @@ export function HeroSection() {
 
             {/* Subheadline */}
             <p className="text-lg lg:text-xl text-primary-foreground/90 mb-4 leading-relaxed">
-              Culture Crunch is the <strong>Behaviour Change Engine</strong> that improves leadership, lifts engagement, and reduces turnover — without workshops, consultants, or new headcount.
+              Culture Crunch is the <strong>Behaviour Change Engine</strong> that improves leadership, lifts engagement, and reduces turnover - without workshops, consultants, or new headcount.
             </p>
 
             {/* Tagline */}
@@ -25,7 +30,11 @@ export function HeroSection() {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-base font-semibold">
+              <Button
+                size="lg"
+                className="bg-accent text-accent-foreground hover:bg-accent/90 text-base font-semibold"
+                onClick={() => openForm("demo")}
+              >
                 Book a 20-Minute Demo
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
@@ -33,6 +42,7 @@ export function HeroSection() {
                 size="lg"
                 variant="outline"
                 className="bg-transparent border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 text-base font-semibold"
+                onClick={() => document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 See How It Works
               </Button>

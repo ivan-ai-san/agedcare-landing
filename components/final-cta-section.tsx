@@ -1,7 +1,12 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
+import { useContactForm } from "@/components/contact-form-modal"
 
 export function FinalCtaSection() {
+  const { openForm } = useContactForm()
+
   return (
     <section className="py-20 lg:py-32 bg-primary text-primary-foreground">
       <div className="container mx-auto px-6 max-w-4xl text-center">
@@ -9,7 +14,7 @@ export function FinalCtaSection() {
           Aged Care deserves leaders and teams who feel supported, capable, and connected.
         </h2>
         <p className="text-xl lg:text-2xl text-primary-foreground/90 mb-12 leading-relaxed">
-          Culture Crunch helps you build that — one week at a time.
+          Culture Crunch helps you build that - one week at a time.
         </p>
 
         <div className="bg-primary-foreground/10 border border-primary-foreground/20 rounded-xl p-8 mb-12">
@@ -20,6 +25,7 @@ export function FinalCtaSection() {
           <Button
             size="lg"
             className="bg-accent text-accent-foreground hover:bg-accent/90 text-base font-semibold px-8"
+            onClick={() => openForm("demo")}
           >
             Book a Demo
             <ArrowRight className="ml-2 h-5 w-5" />
@@ -28,6 +34,7 @@ export function FinalCtaSection() {
             size="lg"
             variant="outline"
             className="bg-transparent border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 text-base font-semibold px-8"
+            onClick={() => openForm("proposal")}
           >
             Request a Proposal
           </Button>

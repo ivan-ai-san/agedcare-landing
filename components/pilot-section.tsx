@@ -1,7 +1,11 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { Check, ArrowRight } from "lucide-react"
+import { useContactForm } from "@/components/contact-form-modal"
 
 export function PilotSection() {
+  const { openForm } = useContactForm()
   const included = [
     "One aged care home or service",
     "Weekly behaviour engine for every leader",
@@ -13,11 +17,11 @@ export function PilotSection() {
   ]
 
   return (
-    <section className="py-20 lg:py-32 bg-background">
+    <section id="pricing" className="py-20 lg:py-32 bg-background">
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            Try Culture Crunch in one home — see improvements in 30 days.
+            Try Culture Crunch in one home - see improvements in 30 days.
           </h2>
         </div>
 
@@ -50,11 +54,17 @@ export function PilotSection() {
               <Button
                 size="lg"
                 className="w-full bg-accent text-accent-foreground hover:bg-accent/90 text-base font-semibold"
+                onClick={() => openForm("proposal")}
               >
                 Book Your Pilot
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button size="lg" variant="outline" className="w-full text-base font-semibold bg-transparent">
+              <Button
+                size="lg"
+                variant="outline"
+                className="w-full text-base font-semibold bg-transparent"
+                onClick={() => openForm("demo")}
+              >
                 Talk to a Founder
               </Button>
             </div>

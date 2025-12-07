@@ -1,6 +1,11 @@
+"use client"
+
 import Link from "next/link"
+import { useContactForm } from "@/components/contact-form-modal"
 
 export function Footer() {
+  const { openForm } = useContactForm()
+
   return (
     <footer className="bg-card border-t border-border py-12">
       <div className="container mx-auto px-6">
@@ -18,19 +23,20 @@ export function Footer() {
             <h4 className="font-semibold mb-4">Product</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <button
+                  onClick={() => document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
                   How It Works
-                </Link>
+                </button>
               </li>
               <li>
-                <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <button
+                  onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
                   Pricing
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Case Studies
-                </Link>
+                </button>
               </li>
             </ul>
           </div>
@@ -45,14 +51,12 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Careers
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <button
+                  onClick={() => openForm("demo")}
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
                   Contact
-                </Link>
+                </button>
               </li>
             </ul>
           </div>
