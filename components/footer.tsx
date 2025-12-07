@@ -46,12 +46,9 @@ export function Footer() {
             <h4 className="font-semibold mb-4">Company</h4>
             <ul className="space-y-2">
               <li>
-                <button
-                  onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                >
+                <Link href="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   About Us
-                </button>
+                </Link>
               </li>
               <li>
                 <button
