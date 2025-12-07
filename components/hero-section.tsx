@@ -12,7 +12,7 @@ export function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="/aged-care-team-meeting-with-diverse-healthcare-pro.jpg"
+          src="/micheile-henderson-PpZasS086os-unsplash.jpg"
           alt="Aged care leadership team collaborating"
           className="w-full h-full object-cover"
         />
