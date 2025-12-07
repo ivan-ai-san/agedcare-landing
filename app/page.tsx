@@ -1,5 +1,4 @@
 import { HeroSection } from "@/components/hero-section"
-import { LogoBar } from "@/components/logo-bar"
 import { ProblemSection } from "@/components/problem-section"
 import { SolutionSection } from "@/components/solution-section"
 import { WhyItMattersSection } from "@/components/why-it-matters-section"
@@ -14,7 +13,6 @@ export default function Page() {
   return (
     <main className="min-h-screen">
       <HeroSection />
-      <LogoBar />
       <ProblemSection />
       <SolutionSection />
       <WhyItMattersSection />
