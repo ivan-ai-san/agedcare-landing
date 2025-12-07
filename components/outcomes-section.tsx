@@ -62,7 +62,7 @@ export function OutcomesSection() {
         {/* Outcomes Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {audiences.map((audience, index) => (
-            <div key={index} className="bg-card p-8 rounded-xl border border-border">
+            <div key={index} className="bg-card p-8 rounded-xl border border-border transition-all duration-300 ease-out hover:scale-105 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/10 cursor-pointer">
               <div className="mb-6">
                 <h3 className="text-xl font-bold text-card-foreground">{audience.role}</h3>
               </div>

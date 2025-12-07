@@ -69,7 +69,7 @@ export function DifferentiatorsSection() {
         {/* Differentiators Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {differentiators.map((diff) => (
-            <div key={diff.number} className="bg-card p-8 rounded-xl border border-border hover:shadow-lg transition-shadow">
+            <div key={diff.number} className="bg-card p-8 rounded-xl border border-border transition-all duration-300 ease-out hover:scale-105 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/10 cursor-pointer">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-sm">
                   {diff.number}

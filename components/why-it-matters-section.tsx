@@ -54,7 +54,7 @@ export function WhyItMattersSection() {
         <div className="max-w-2xl mx-auto mb-12">
           <ul className="space-y-4">
             {benefits.map((benefit, index) => (
-              <li key={index} className="flex items-center gap-4 p-4 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20">
+              <li key={index} className="flex items-center gap-4 p-4 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 transition-all duration-300 ease-out hover:scale-105 hover:bg-white/20 hover:border-accent/40 hover:shadow-lg hover:shadow-accent/10 cursor-pointer">
                 <div className="w-12 h-12 rounded-lg bg-accent flex items-center justify-center shrink-0">
                   <benefit.icon className="w-6 h-6 text-accent-foreground" />
                 </div>

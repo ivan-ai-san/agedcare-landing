@@ -43,7 +43,7 @@ export function ProblemSection() {
         {/* Pain Points Grid */}
         <div className="grid md:grid-cols-2 gap-6 mb-8">
           {painPoints.map((point, index) => (
-            <div key={index} className="flex items-start gap-4 p-6 bg-card rounded-lg border border-border">
+            <div key={index} className="flex items-start gap-4 p-6 bg-card rounded-lg border border-border transition-all duration-300 ease-out hover:scale-105 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/10 cursor-pointer">
               <div className="flex-shrink-0">
                 <point.icon className="w-6 h-6 text-destructive" />
               </div>
