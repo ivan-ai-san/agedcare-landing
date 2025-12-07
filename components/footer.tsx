@@ -7,8 +7,14 @@ export function Footer() {
   const { openForm } = useContactForm()
 
   return (
-    <footer className="bg-card border-t border-border py-12">
-      <div className="container mx-auto px-6">
+    <footer className="relative bg-card border-t border-border py-12 overflow-hidden">
+      {/* Depth Effects */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute -bottom-1/2 -left-1/4 w-1/2 h-full bg-primary/3 rounded-full blur-3xl" />
+        <div className="absolute -bottom-1/2 -right-1/4 w-1/2 h-full bg-accent/3 rounded-full blur-3xl" />
+      </div>
+
+      <div className="relative z-10 container mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Company */}
           <div>
@@ -66,13 +72,13 @@ export function Footer() {
             <h4 className="font-semibold mb-4">Legal</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <Link href="/privacy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Terms of Service
+                <Link href="/terms" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  Terms of Use
                 </Link>
               </li>
             </ul>
@@ -85,11 +91,8 @@ export function Footer() {
             © {new Date().getFullYear()} Culture Crunch. All rights reserved.
           </p>
           <div className="flex gap-6">
-            <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+            <Link href="https://www.linkedin.com/company/culturecrunch" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               LinkedIn
-            </Link>
-            <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Twitter
             </Link>
           </div>
         </div>

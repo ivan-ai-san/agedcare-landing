@@ -42,8 +42,25 @@ export function SolutionSection() {
   ]
 
   return (
-    <section id="how-it-works" className="py-20 lg:py-32 bg-primary text-primary-foreground">
-      <div className="container mx-auto px-6 max-w-6xl">
+    <section id="how-it-works" className="relative py-20 lg:py-32 bg-primary text-primary-foreground overflow-hidden">
+      {/* Depth Effects */}
+      <div className="absolute inset-0 pointer-events-none">
+        {/* Radial glow - top right */}
+        <div className="absolute -top-1/4 -right-1/4 w-1/2 h-1/2 bg-accent/20 rounded-full blur-3xl" />
+        {/* Radial glow - bottom left */}
+        <div className="absolute -bottom-1/4 -left-1/4 w-1/2 h-1/2 bg-accent/15 rounded-full blur-3xl" />
+        {/* Subtle center glow */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-1/2 bg-white/5 rounded-full blur-3xl" />
+        {/* Floating shapes */}
+        <div className="absolute top-20 left-10 w-32 h-32 border border-white/10 rounded-full" />
+        <div className="absolute top-40 right-20 w-24 h-24 border border-accent/20 rounded-full" />
+        <div className="absolute bottom-32 left-1/4 w-16 h-16 border border-white/10 rounded-full" />
+        <div className="absolute bottom-20 right-1/3 w-40 h-40 border border-accent/10 rounded-full" />
+        {/* Grid pattern overlay */}
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-size-[60px_60px]" />
+      </div>
+
+      <div className="relative z-10 container mx-auto px-6 max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">The Behaviour Change Engine for Aged Care</h2>
           <p className="text-xl text-primary-foreground/90 max-w-3xl mx-auto leading-relaxed">
@@ -77,7 +94,7 @@ export function SolutionSection() {
 
               {/* Image */}
               <div className={`${index % 2 === 1 ? "lg:order-1" : ""}`}>
-                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 shadow-xl border border-white/20">
+                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 shadow-xl border border-white/20 transition-transform duration-300 ease-out hover:scale-[1.5] cursor-pointer z-10 hover:z-50">
                   <div className="bg-card rounded-xl overflow-hidden shadow-lg">
                     <img
                       src={step.image}

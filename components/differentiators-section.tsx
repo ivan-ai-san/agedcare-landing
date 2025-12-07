@@ -46,8 +46,22 @@ export function DifferentiatorsSection() {
   ]
 
   return (
-    <section className="py-20 lg:py-32 bg-muted">
-      <div className="container mx-auto px-6 max-w-6xl">
+    <section className="relative py-20 lg:py-32 bg-muted overflow-hidden">
+      {/* Depth Effects */}
+      <div className="absolute inset-0 pointer-events-none">
+        {/* Gradient mesh */}
+        <div className="absolute -top-1/4 -left-1/4 w-1/2 h-1/2 bg-primary/5 rounded-full blur-3xl" />
+        <div className="absolute -bottom-1/4 -right-1/4 w-1/2 h-1/2 bg-accent/5 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2/3 h-1/2 bg-white/50 rounded-full blur-3xl" />
+        {/* Floating shapes */}
+        <div className="absolute top-16 right-12 w-28 h-28 border border-primary/10 rounded-full" />
+        <div className="absolute bottom-20 left-24 w-20 h-20 border border-accent/10 rounded-full" />
+        <div className="absolute top-1/2 right-1/4 w-16 h-16 border border-primary/5 rounded-full" />
+        {/* Dot pattern */}
+        <div className="absolute inset-0 bg-[radial-gradient(#1d4d4f08_1px,transparent_1px)] bg-size-[24px_24px]" />
+      </div>
+
+      <div className="relative z-10 container mx-auto px-6 max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">Not a survey. Not training. Not AI hype.</h2>
         </div>

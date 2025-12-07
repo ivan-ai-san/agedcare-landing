@@ -53,11 +53,45 @@ export function ContactFormProvider({ children }: { children: React.ReactNode })
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000))
+    const formData = new FormData(e.currentTarget)
+    const data = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      organisation: formData.get("organisation"),
+      role: formData.get("role"),
+      interestType,
+      message: formData.get("message"),
+    }
 
-    setIsSubmitting(false)
-    setIsSubmitted(true)
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      })
+
+      // Check content type before parsing
+      const contentType = response.headers.get("content-type")
+      if (!contentType || !contentType.includes("application/json")) {
+        console.error("API returned non-JSON response:", response.status)
+        throw new Error("Server error - please try again")
+      }
+
+      const result = await response.json()
+
+      if (!response.ok) {
+        console.error("API error:", result)
+        throw new Error(result.error || "Failed to submit")
+      }
+
+      setIsSubmitted(true)
+    } catch (error) {
+      console.error("Submission error:", error)
+      const errorMessage = error instanceof Error ? error.message : "Unknown error"
+      alert(`Something went wrong: ${errorMessage}. Please try again or email us at hello@culturecrunch.io`)
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (

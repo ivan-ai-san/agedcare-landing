@@ -35,14 +35,26 @@ export function OutcomesSection() {
         "More support",
         "More clarity",
         "More recognition",
-        "A culture worth staying in",
+        "A culture worth\u00A0staying\u00A0in",
       ],
     },
   ]
 
   return (
-    <section className="py-20 lg:py-32 bg-background">
-      <div className="container mx-auto px-6 max-w-6xl">
+    <section className="relative py-20 lg:py-32 bg-background overflow-hidden">
+      {/* Depth Effects */}
+      <div className="absolute inset-0 pointer-events-none">
+        {/* Gradient mesh */}
+        <div className="absolute top-0 left-1/4 w-1/2 h-1/2 bg-accent/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-1/4 w-1/2 h-1/2 bg-primary/5 rounded-full blur-3xl" />
+        {/* Floating shapes */}
+        <div className="absolute top-20 right-24 w-20 h-20 border border-primary/10 rounded-full" />
+        <div className="absolute bottom-24 left-16 w-28 h-28 border border-accent/10 rounded-full" />
+        {/* Dot pattern */}
+        <div className="absolute inset-0 bg-[radial-gradient(#1d4d4f08_1px,transparent_1px)] bg-size-[24px_24px]" />
+      </div>
+
+      <div className="relative z-10 container mx-auto px-6 max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">What Aged Care Providers Achieve</h2>
         </div>

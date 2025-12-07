@@ -94,8 +94,8 @@ export default function AboutPage() {
               {founders.map((founder, index) => (
                 <div
                   key={founder.name}
-                  className={`grid lg:grid-cols-[200px_1fr] gap-8 items-start ${
-                    index % 2 === 1 ? "lg:grid-cols-[1fr_200px]" : ""
+                  className={`grid gap-8 items-start ${
+                    index % 2 === 1 ? "lg:grid-cols-[1fr_200px]" : "lg:grid-cols-[200px_1fr]"
                   }`}
                 >
                   {/* Avatar */}
