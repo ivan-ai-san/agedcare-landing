@@ -37,7 +37,7 @@ export function SolutionSection() {
       icon: BarChart3,
       title: "Tracking & Reporting",
       description: "You see measurable behavioural improvements - week by week.",
-      image: "/dashboard.png",
+      image: "/dashboard1.png",
     },
   ]
 
