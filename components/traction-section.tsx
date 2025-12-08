@@ -29,34 +29,6 @@ export function TractionSection() {
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">Early Aged Care Partners</h2>
         </div>
 
-        {/* Partner Logos */}
-        <div className="flex flex-wrap justify-center items-center gap-16 mb-16">
-          <a
-            href="https://kinyarahealth.com.au/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="transition-opacity hover:opacity-80"
-          >
-            <img
-              src="https://kinyarahealth.com.au/wp-content/uploads/2025/01/logo_kinyara.Colour-Full-nomargin.png"
-              alt="Kinyara Health"
-              className="w-36 h-auto object-contain"
-            />
-          </a>
-          <a
-            href="https://harbison.org.au/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="transition-opacity hover:opacity-80"
-          >
-            <img
-              src="https://harbison.org.au/wp-content/uploads/2025/04/Harbison-Logo-reversed-1.svg"
-              alt="Harbison"
-              className="w-36 h-auto object-contain"
-            />
-          </a>
-        </div>
-
         {/* What they're seeing */}
         <div className="max-w-2xl mx-auto">
           <h3 className="text-2xl font-bold mb-6 text-center">What they're seeing:</h3>
