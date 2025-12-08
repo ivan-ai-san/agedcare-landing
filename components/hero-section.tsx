@@ -30,7 +30,7 @@ export function HeroSection() {
         <div className="max-w-4xl mx-auto text-center text-primary-foreground">
           {/* Headline */}
           <h1 className="text-5xl lg:text-7xl font-bold leading-tight mb-6 text-balance">
-            Lift Leadership & Workforce Performance. Every Week.
+            Lift Aged Care Leadership & Workforce Performance — Every Week.
           </h1>
 
           {/* Subheadline */}
