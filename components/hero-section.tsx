@@ -12,7 +12,7 @@ export function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="/micheile-henderson-PpZasS086os-unsplash.jpg"
+          src="/age-cymru-GStFfDrOygo-unsplash (1).jpg"
           alt="Aged care leadership team collaborating"
           className="w-full h-full object-cover"
         />
@@ -35,7 +35,7 @@ export function HeroSection() {
 
           {/* Subheadline */}
           <p className="text-lg lg:text-xl text-primary-foreground/90 mb-4 leading-relaxed max-w-3xl mx-auto">
-            Culture Crunch is the <strong>Behaviour Change Engine</strong> that improves leadership, lifts engagement, and reduces turnover - without workshops, consultants, or new headcount.
+            A weekly behaviour system that improves employee experience, reduces psychosocial risk, and strengthens care quality.
           </p>
 
           {/* Tagline */}
