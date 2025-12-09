@@ -14,7 +14,10 @@ export const metadata: Metadata = {
     "Lift leadership & workforce performance in aged care. Weekly behaviour change that delivers better leaders, stronger teams, and improved care.",
   generator: "v0.app",
   icons: {
-    icon: "/favicon.png",
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.png", type: "image/png" },
+    ],
     apple: "/favicon.png",
   },
 }
