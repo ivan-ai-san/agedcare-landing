@@ -124,7 +124,7 @@ export function SolutionSection() {
 
         {/* Callout */}
         <div className="bg-accent text-accent-foreground p-8 rounded-xl text-center">
-          <p className="text-2xl lg:text-3xl font-bold">Behaviour change in 30 seconds per leader per week.</p>
+          <p className="text-2xl lg:text-3xl font-bold">2 minutes from your team. 30 from your leaders. Change that lasts.</p>
         </div>
       </div>
     </section>
