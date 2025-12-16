@@ -122,7 +122,7 @@ export default function PrivacyPolicyPage() {
             <section className="mb-12">
               <h2 className="text-2xl font-bold mb-4 text-foreground">AI-Powered Insights</h2>
               <p className="text-muted-foreground mb-4">
-                Our AI Coach Companion (ChrisAI) analyses team-level data to provide leadership recommendations. These insights are:
+                Our AI Coach Companion (CHRIS) analyses team-level data to provide leadership recommendations. These insights are:
               </p>
               <ul className="space-y-2 text-muted-foreground mb-4">
                 <li>- Advisory only (not automated decisions affecting employment)</li>

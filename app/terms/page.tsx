@@ -52,7 +52,7 @@ export default function TermsOfUsePage() {
               </p>
               <ul className="space-y-2 text-muted-foreground mb-6">
                 <li>- Weekly Team Pulse surveys and Leader Pulse reflections</li>
-                <li>- AI Coach Companion (ChrisAI) providing personalised leadership insights</li>
+                <li>- AI Coach Companion (CHRIS) providing personalised leadership insights</li>
                 <li>- Research-backed micro-actions for behaviour change</li>
                 <li>- Team-level analytics on engagement, teamwork, and culture</li>
                 <li>- Executive reporting and insights dashboards</li>
@@ -199,7 +199,7 @@ export default function TermsOfUsePage() {
 
               <h3 className="text-xl font-semibold mb-3 text-foreground">6.1 Pricing</h3>
               <p className="text-muted-foreground mb-4">
-                Pricing is as quoted for your specific program. The 30-Day Pilot Program is typically $25,000 AUD. All fees are exclusive of GST, which will be added as required by law.
+                Pricing is as quoted for your specific program. All fees are exclusive of GST, which will be added as required by law.
               </p>
 
               <h3 className="text-xl font-semibold mb-3 text-foreground">6.2 Refunds and Cancellations</h3>

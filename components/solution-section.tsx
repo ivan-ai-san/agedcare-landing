@@ -22,7 +22,7 @@ export function SolutionSection() {
       number: 3,
       icon: Brain,
       title: "AI Analysis",
-      description: "ChrisAI identifies the behaviour shifts that will create the biggest improvement right now.",
+      description: "CHRIS identifies the behaviour shifts that will create the biggest improvement right now.",
       image: "/ChrisAI_summary.png",
     },
     {

@@ -9,7 +9,7 @@ export function PilotSection() {
   const included = [
     "One aged care home or service",
     "Weekly behaviour engine for every leader",
-    "ChrisAI leadership coaching",
+    "CHRIS leadership coaching",
     "Team pulse + leader pulse",
     "Baseline + end-of-month insights",
     "Executive-level behavioural report",
@@ -53,22 +53,25 @@ export function PilotSection() {
             </ul>
           </div>
 
-          {/* Right: Pricing Card */}
+          {/* Right: CTA Card */}
           <div className="bg-card border-2 border-primary rounded-xl p-8 lg:p-10 sticky top-8">
             <div className="mb-8">
-              <div className="text-sm uppercase tracking-wider text-muted-foreground mb-2">Pilot Cost</div>
-              <div className="flex items-baseline gap-2 mb-4">
-                <span className="text-5xl font-bold text-card-foreground">$25,000</span>
-              </div>
+              <h3 className="text-3xl lg:text-4xl font-bold text-card-foreground mb-4">What Would You Save?</h3>
+              <p className="text-lg text-muted-foreground mb-4">
+                Reduced turnover. Fewer incidents. Happier teams.
+              </p>
+              <p className="text-sm text-muted-foreground">
+                Our pilots typically deliver measurable improvements within 30 days.
+              </p>
             </div>
 
-            <div className="space-y-3 mb-8">
+            <div className="space-y-3">
               <Button
                 size="lg"
                 className="w-full bg-accent text-accent-foreground hover:bg-accent/90 text-base font-semibold"
                 onClick={() => openForm("proposal")}
               >
-                Book Your Pilot
+                See What's Possible
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <Button
